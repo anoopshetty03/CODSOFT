@@ -1,0 +1,141 @@
+.todoappBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .inputOptions {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px; 
+  }
+  
+  .mainInput {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .taskAdd-Button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .taskAdd-Button:hover {
+    background-color: #218838;
+  }
+  
+  .tasklist {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px; 
+  }
+  
+  .tasklist ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .tasklist li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tasklist li:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .checkedIcon {
+    cursor: pointer;
+  }
+  
+  .deleteIcon {
+    color: #dc3545;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .deleteIcon:hover {
+    color: #c82333;
+  }
+  
+  .editIcon {
+    color: #ffc107;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .editIcon:hover {
+    color: #e0a800;
+  }
+  
+  .Popupcontent {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+  }
+  
+  .editPopupinput {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 250px;
+    flex-grow: 1;
+  }
+  
+  .saveButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4681f4;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0; 
+  }
+  
+  
